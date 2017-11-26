@@ -6,13 +6,6 @@ import App from './components/App';
 /**
   Example of an app from the json
 **/
-
-const dataJSON2 = () => {
-  return new Promise(function(resolve){
-      resolve(dataJSON);
-    });
-}
-
 const exampleData = [
   {
     "name": "Small Fresh Pants - Kautzer - Boyer, and Sons",
@@ -29,7 +22,7 @@ const exampleData = [
 
 export default class DataLoader {
     constructor() {
-      this.dataJSON = dataJSON2;
+      this.dataJSON = dataJSON;
       this.dataObject = [];
       this.auxHostsArray = [];
     }
