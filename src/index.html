@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>New Relic</title>
+    <link rel="stylesheet" href="./assets/css/new_relic.bundle.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1><strong>Apps by Host </strong>for user averylongemailadress@companyname.com</h1>
+        <div id="header-grid-list-check">
+          <input type="checkbox" id="header-grid-list-check-input" class="header-grid-list-check-input"/>
+          <label for="header-grid-list-check-input" id="header-grid-list-check-input-text">Show as list</label>
+      </header>
+      <section id="app" class="grid">
+        <div class="app-loader">LOADING...</div>
+      </section>
+    </main>
+    <section id="get-top-apps">
+      <div class="card">
+        <header>
+          <h1>Search Top Apps by Host</h1>
+        </header>
+        <div class="get-top-apps-form">
+          <input type="text" id="get-top-apps-host" placeholder="Insert the name of the host" />
+          <input type="button" id="get-top-apps-button" class="get-top-apps-button" value="SEARCH" />
+          <span class="trash-icon" id="get-top-apps-remove-filter"></span>
+        </div>
+      </div>
+      <div class="card">
+        <header>
+          <h1>Add and remove app to all hosts</h1>
+        </header>
+        <div class="get-top-apps-form">
+          <input type="text" id="get-top-apps-name" placeholder="Insert the name of the app" />
+          <input type="button" id="get-top-apps-button-add" class="get-top-apps-button" value="ADD" />
+          <input type="button" id="get-top-apps-button-remove" class="get-top-apps-button" value="REMOVE" />
+        </div>
+      </div>
+    </section>
+    <script src="bundle.js"></script>
+  </body>
+</html>

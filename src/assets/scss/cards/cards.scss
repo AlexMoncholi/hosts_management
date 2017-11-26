@@ -1,0 +1,77 @@
+$card-size-grid: calc(50% - 15px);
+$card-size-list: 100%;
+
+.card {
+  & {
+    background-color: $card-background;
+    padding: 0 $spacing-normal $spacing-normal 0;
+    float: left;
+    position: relative;
+  }
+  h1 {
+    padding: $spacing-normal 0 $spacing-l $spacing-normal;
+    margin: 0;
+  }
+  ul {
+    & {
+      margin-left: $spacing-normal;
+      font-size: $font-size-l;
+    }
+    li {
+      line-height: $line-height-xl;
+      display: inline-flex;
+      float: left;
+      clear: both;
+    }
+  }
+  &-apdex {
+    color: $secondary-color;
+    font-size: $font-size-l;
+    display: inline-block;
+    padding-right: $spacing-l;
+  }
+  &-app-names {
+    & {
+      display: inline-block;
+    }
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}
+.grid li, .list li {
+  & {
+    transition: all .5s ease;
+  }
+  &:hover  {
+    background-color: $background-color;
+  }
+}
+.grid .card {
+  & {
+    width: $card-size-grid;
+    margin: 0 $spacing-normal $spacing-normal 0;
+    overflow: hidden;
+  }
+  &:nth-child(2n+0){
+    margin-right: 0
+  }
+}
+
+.list .card {
+  & {
+    width: $card-size-list;
+    margin: 0 0 $spacing-normal 0;
+    padding-right: $spacing-normal;
+    overflow: hidden;
+    display: block;
+  }
+  li {
+    & {
+      clear: both;
+    }
+    span {
+      float: left;
+    }
+  }
+}
