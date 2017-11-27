@@ -1,8 +1,14 @@
 input[type="text"] {
+  & {
     border: 0;
     border-bottom: 1px solid $secondary-color;
     width: 50%;
     font-size: $font-size-normal;
+    padding: 5px 22px 5px 5px;
+  }
+  &:focus {
+    outline: none;
+  }
 }
 input[type="button"] {
   & {
